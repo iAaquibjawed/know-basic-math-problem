@@ -36,7 +36,6 @@ end
 
 puts reverse_number(1234) # 4321
 
-require 'byebug'
 
 def reverse_number_another(number)
     reverse = 0
