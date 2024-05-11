@@ -1,8 +1,7 @@
 # Reverse Digits of A Number
 
-# Problem Statement: Given an integer N return the reverse of the given number.
+Problem Statement: Given an integer N return the reverse of the given number.
 def reverse_number(number)
-    byebug
   unless number.is_a? Integer
     return "Input must be an integer"
   end
@@ -35,4 +34,18 @@ def remove_element_from_index(string, index)
 end
 
 
-# puts reverse_number(1234) # 4321
+puts reverse_number(1234) # 4321
+
+require 'byebug'
+
+def reverse_number_another(number)
+    reverse = 0
+    while number>0
+        reverse = reverse*10 + number%10
+        number = number/10
+    end
+
+    return reverse
+end
+
+puts reverse_number_another(1234000) # 4321
