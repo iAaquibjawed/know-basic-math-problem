@@ -18,3 +18,18 @@ end
 
 
 puts gcd_of_two_numbers(12, 24) # 12
+
+
+
+
+def gcd_of_two_numbers_another(n1, n2)
+    while n2 != 0
+        temp = n2
+        n2 = n1%n2
+        n1 = temp
+    end
+    return n1
+end
+
+
+puts gcd_of_two_numbers_another(12, 24) # 12
