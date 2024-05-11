@@ -28,3 +28,30 @@ end
 
 
 puts check_palindrom(1249321) # true
+
+
+
+
+
+
+
+
+def check_reverse(number)
+    reverse = 0
+    while number>0
+        reverse = reverse*10 + number%10
+        number = number/10
+    end
+    return reverse
+end
+
+def check_palindrome_another(number)
+    if number == check_reverse(number)
+        return true
+    else
+        return false
+    end
+end
+
+
+puts check_palindrome_another(1249321) # true
