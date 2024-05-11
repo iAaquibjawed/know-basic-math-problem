@@ -35,4 +35,4 @@ def remove_element_from_index(string, index)
 end
 
 
-puts reverse_number(1234) # 4321
+# puts reverse_number(1234) # 4321
